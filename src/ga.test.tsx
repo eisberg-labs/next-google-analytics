@@ -1,20 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import GoogleAnalytics from './ga';
-import {ScriptProps} from 'next/script';
+import { ScriptProps } from 'next/script';
 // @ts-ignore
-jest.mock(
-  'next/script',
-  () =>
-    ({ children, strategy, ...rest }: ScriptProps) => {
-      // @ts-ignore
-      return <mock-script {...rest}>{children}</mock-script>;
-    }
-);
+jest.mock('next/script', () => ({ children, strategy, ...rest }: ScriptProps) => {
+  // @ts-ignore
+  return <mock-script {...rest}>{children}</mock-script>;
+});
 // @ts-ignore
-jest.mock<typeof import('next/head')>('next/head', () => ({ children }) => (
-  <>{children}</>
-));
+jest.mock<typeof import('next/head')>('next/head', () => ({ children }) => <>{children}</>);
 describe('googleAnalytics', () => {
   const trackingId = 'G-XXXXXXX'; // Example tracking id
 

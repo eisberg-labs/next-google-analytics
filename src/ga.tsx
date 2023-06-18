@@ -2,7 +2,11 @@ import Script from 'next/script';
 import React from 'react';
 import Head from 'next/head';
 
-function GoogleAnalytics({ trackingId }: { trackingId: string }) {
+export interface Props {
+  trackingId: string;
+}
+
+export default function GoogleAnalytics({ trackingId }: Props) {
   return (
     <>
       <Head>
@@ -23,4 +27,3 @@ function GoogleAnalytics({ trackingId }: { trackingId: string }) {
     </>
   );
 }
-export default GoogleAnalytics;

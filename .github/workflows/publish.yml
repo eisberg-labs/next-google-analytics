@@ -17,6 +17,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Publish package on NPM 📦
-        run: npm run build && cd dist/ngx-barcode-scanner && npm publish --access public
+        run: npm run build && npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

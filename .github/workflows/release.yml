@@ -29,16 +29,12 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
-      - name: Install prerequisites and test
-        env:
-          CHROME_BIN: "/usr/bin/chromium-browser"
-        run: sudo apt-get update -yq && sudo apt-get install xvfb -yq && xvfb-run --auto-servernum npm test
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3.18.0
         with:
           github-token: ${{ secrets.github_token }}
-          version-file: ./ngx-barcode-scanner/package.json
+          version-file: ./package.json
           tag-prefix: ""
       - name: Create Release
         uses: actions/create-release@v1

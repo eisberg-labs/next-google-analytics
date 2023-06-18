@@ -1,27 +1,35 @@
 {
   "compilerOptions": {
-    "module": "esnext",
     "target": "es5",
-    "lib": [
-      "dom",
-      "es2020"
-    ],
-    "sourceMap": true,
-    "jsx": "react",
+    "module": "commonjs",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "jsx": "react",
+    "declaration": true,
+    "pretty": true,
+    "rootDir": "src",
+    "sourceMap": false,
     "strict": true,
-    "allowJs": true,
-    "noImplicitAny": false
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "lib",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "importHelpers": true
   },
-  "include": [
-    "src"
-  ],
   "exclude": [
-    "__tests__",
     "node_modules",
-    "dist"
+    "lib",
+    "esm",
+    "tests",
+    "stories",
+    "src/**/*.test.ts",
+    "jest.config.ts",
+    "jest.config.*.ts"
   ]
 }
