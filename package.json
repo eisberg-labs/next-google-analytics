@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/next-google-analytics",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "NextJS React Component for Google analytics 4.",
   "main": "lib/index.js",
   "module": "esm/index.js",
