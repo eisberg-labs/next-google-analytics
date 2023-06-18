@@ -11,14 +11,15 @@ npm i --save @eisberg-labs/next-google-analytics
 ```
 
 ## Usage
-Add this on your page, either in `pages/_app.tsx` for global access.  
+Add this on your page, either in `pages/_app.tsx` for global access.
 
 ```jsx
+import { GoogleAnalytics } from '@eisberg-labs/next-google-analytics';
 
-export default function MyApp({Component, pageProps}) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      {process.env.NEXT_PUBLIC_ANALYTICS_ID && <GoogleAnalytics trackingId={process.env.NEXT_PUBLIC_ANALYTICS_ID}/>}
+      <GoogleAnalytics trackingId={process.env.NEXT_PUBLIC_ANALYTICS_ID} />
       <Component {...pageProps} />
     </>
   );
