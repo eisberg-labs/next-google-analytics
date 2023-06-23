@@ -31,7 +31,7 @@ jobs:
         run: npm run lint
       - name: Conventional Changelog Action
         id: changelog
-        uses: TriPSs/conventional-changelog-action@v3.18.0
+        uses: TriPSs/conventional-changelog-action@v3.19.0
         with:
           github-token: ${{ secrets.github_token }}
           version-file: ./package.json
