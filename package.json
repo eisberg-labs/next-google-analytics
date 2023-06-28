@@ -72,7 +72,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "ts-jest": "29.1.0",
-    "typescript": "5.1.5"
+    "typescript": "5.1.6"
   },
   "peerDependencies": {
     "next": "^13.0.0",
