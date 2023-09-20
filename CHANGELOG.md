@@ -1,3 +1,12 @@
+## [5.0.3](https://github.com/eisberg-labs/next-google-analytics/compare/5.0.2...5.0.3) (2023-09-20)
+
+
+### Bug Fixes
+
+* **deps:** update docusaurus monorepo to v2.4.3 ([7486dba](https://github.com/eisberg-labs/next-google-analytics/commit/7486dbac49f850d55146cf7365738d95f7637b45))
+
+
+
 ## [5.0.2](https://github.com/eisberg-labs/next-google-analytics/compare/5.0.1...5.0.2) (2023-06-23)
 
 
