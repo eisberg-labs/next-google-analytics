@@ -47,7 +47,7 @@
     "@babel/preset-typescript": "7.23.3",
     "@babel/runtime": "7.23.6",
     "@testing-library/jest-dom": "5.17.0",
-    "@testing-library/react": "14.0.0",
+    "@testing-library/react": "14.1.2",
     "@types/jest": "29.5.11",
     "@types/node": "20.8.9",
     "@types/react": "18.2.46",
