@@ -41,11 +41,11 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "7.23.6",
-    "@babel/preset-env": "7.23.6",
+    "@babel/core": "7.23.7",
+    "@babel/preset-env": "7.23.7",
     "@babel/preset-react": "7.23.3",
     "@babel/preset-typescript": "7.23.3",
-    "@babel/runtime": "7.23.6",
+    "@babel/runtime": "7.23.7",
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "14.1.2",
     "@types/jest": "29.5.11",
